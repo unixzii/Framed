@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Cyandev. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for CoreFramed.
 FOUNDATION_EXPORT double CoreFramedVersionNumber;

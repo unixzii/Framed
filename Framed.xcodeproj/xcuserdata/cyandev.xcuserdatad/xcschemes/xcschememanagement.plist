@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CoreFramed-iOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>CoreFramed.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>Framed-iOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>Framed.xcscheme</key>
 		<dict>
@@ -22,6 +32,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>FA7DC5861E5D277A00E49737</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FA7DC5B51E5D387C00E49737</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>FABAD2361E59A4850026AAA2</key>
 		<dict>
 			<key>primary</key>

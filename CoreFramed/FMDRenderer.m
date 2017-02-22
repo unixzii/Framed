@@ -7,8 +7,27 @@
 //
 
 #import <CoreImage/CoreImage.h>
+#import <ImageIO/ImageIO.h>
 
 #import "FMDRenderer.h"
+
+//#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+CGRect NSRectFromString(NSString *string) {
+    CGRect result;
+    NSString *normalized = [string stringByReplacingOccurrencesOfString:@" " withString:@""];
+    NSScanner *scanner = [NSScanner scannerWithString:normalized];
+    [scanner scanString:@"{{" intoString:nil];
+    [scanner scanDouble:&result.origin.x];
+    [scanner scanString:@"," intoString:nil];
+    [scanner scanDouble:&result.origin.y];
+    [scanner scanString:@"},{" intoString:nil];
+    [scanner scanDouble:&result.size.width];
+    [scanner scanString:@"," intoString:nil];
+    [scanner scanDouble:&result.size.height];
+    
+    return result;
+}
+//#endif
 
 @implementation FMDRenderer
 
@@ -20,7 +39,7 @@
         return nil;
     }
     
-    NSRect screenFrame = NSRectFromString(model.frameRectString);
+    CGRect screenFrame = NSRectFromString(model.frameRectString);
     
     CGFloat width = CGImageGetWidth(frameImage);
     CGFloat height = CGImageGetHeight(frameImage);

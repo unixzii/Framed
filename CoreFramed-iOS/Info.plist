@@ -18,8 +18,6 @@
 	<string>1.1</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2017年 Cyandev. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
 	<string></string>
 </dict>
