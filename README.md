@@ -2,7 +2,7 @@
 Embed your screenshots into device frames.
 
 ## Screenshot
-![](https://github.com/unixzii/Framed/raw/master/screenshot.png)
+![](https://github.com/unixzii/Framed/raw/master/Screenshot.png)
 
 ## Supported Devices
 **Each with two finishes: Space Gray and Silver.**
