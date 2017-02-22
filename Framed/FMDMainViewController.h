@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FMDMainViewController.h
 //  Framed
 //
 //  Created by 杨弘宇 on 2017/2/19.
@@ -8,8 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ViewController : NSViewController
-
+@interface FMDMainViewController : NSViewController
 
 @end
-

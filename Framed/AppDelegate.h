@@ -8,8 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class FMDResourceManager;
+
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (readonly) FMDResourceManager *resourceManager;
+
++ (instancetype)sharedDelegate;
 
 @end
 

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>FMDContentFrame</key>
+		<string>{{68, 214}, {276, 345}}</string>
+		<key>FMDModelID</key>
+		<string>AW</string>
+		<key>FMDModelRole</key>
+		<integer>4</integer>
+		<key>FMDModelName</key>
+		<string>Apple Watch 38mm</string>
+	</dict>
+	<dict>
+		<key>FMDContentFrame</key>
+        <string>{{48, 178}, {484, 859}}</string>
+		<key>FMDModelID</key>
+		<string>SE</string>
+		<key>FMDModelRole</key>
+		<integer>1</integer>
+		<key>FMDModelName</key>
+		<string>iPhone SE</string>
+	</dict>
+    <dict>
+        <key>FMDContentFrame</key>
+        <string>{{30, 105}, {360, 642}}</string>
+        <key>FMDModelID</key>
+        <string>7</string>
+        <key>FMDModelRole</key>
+        <integer>1</integer>
+        <key>FMDModelName</key>
+        <string>iPhone 7</string>
+    </dict>
+    <dict>
+        <key>FMDContentFrame</key>
+        <string>{{32, 113}, {421, 750}}</string>
+        <key>FMDModelID</key>
+        <string>7P</string>
+        <key>FMDModelRole</key>
+        <integer>1</integer>
+        <key>FMDModelName</key>
+        <string>iPhone 7 Plus</string>
+    </dict>
+	<dict>
+		<key>FMDContentFrame</key>
+        <string>{{47, 135}, {737, 983}}</string>
+		<key>FMDModelID</key>
+		<string>PM</string>
+		<key>FMDModelRole</key>
+		<integer>2</integer>
+		<key>FMDModelName</key>
+		<string>iPad mini</string>
+	</dict>
+	<dict>
+		<key>FMDContentFrame</key>
+        <string>{{61, 120}, {808, 1076}}</string>
+		<key>FMDModelID</key>
+		<string>PA</string>
+		<key>FMDModelRole</key>
+		<integer>2</integer>
+		<key>FMDModelName</key>
+		<string>iPad Pro 9.7</string>
+	</dict>
+	<dict>
+		<key>FMDContentFrame</key>
+        <string>{{71, 133}, {898, 1195}}</string>
+		<key>FMDModelID</key>
+		<string>PP</string>
+		<key>FMDModelRole</key>
+		<integer>2</integer>
+		<key>FMDModelName</key>
+		<string>iPad Pro 12.9</string>
+	</dict>
+</array>
+</plist>

@@ -7,21 +7,33 @@
 //
 
 #import "AppDelegate.h"
+#import "FMDResourceManager.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+    FMDResourceManager *_resourceManager;
+}
 
 @end
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
++ (instancetype)sharedDelegate {
+    return NSApp.delegate;
 }
 
-
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+- (FMDResourceManager *)resourceManager {
+    if (!_resourceManager) {
+        NSURL *resourceBundleURL = [[NSBundle mainBundle] URLForResource:@"FramedResources" withExtension:@"bundle"];
+        _resourceManager = [[FMDResourceManager alloc] initWithBundle:[NSBundle bundleWithURL:resourceBundleURL]];
+        _resourceManager.deviceRoles = FMDResourceDeviceRoleAll;
+        _resourceManager.deviceColors = FMDResourceDeviceColorSpaceGray;
+    }
+    
+    return _resourceManager;
 }
 
+- (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)sender {
+    return YES;
+}
 
 @end
