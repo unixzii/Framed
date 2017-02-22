@@ -133,6 +133,7 @@ static NSString * const CellIdentifier = @"FMDDeviceModelItem";
                     [alert setMessageText:@"Failed to synthetize."];
                     [alert setInformativeText:@"Screenshot is invalid.\n\nHint: You can use alternative images that has similar aspect ratio with actual devices'."];
                     [alert beginSheetModalForWindow:self.view.window completionHandler:nil];
+                    return;
                 }
                 
                 [self showPreviewWindowWithImage:image deviceColor:model.color];

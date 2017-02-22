@@ -36,6 +36,8 @@
 		FA7DC5C61E5D38D400E49737 /* FMDResourceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = FABAD2701E59A65D0026AAA2 /* FMDResourceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA7DC5C71E5D38D400E49737 /* FMDRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1C9FD11E5BFE5B0014B715 /* FMDRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA7DC5C91E5D40F200E49737 /* FramedResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FA7DC5C81E5D40F200E49737 /* FramedResources.bundle */; };
+		FA7DC5CD1E5DB9CC00E49737 /* FMDDeviceModelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7DC5CC1E5DB9CC00E49737 /* FMDDeviceModelCell.m */; };
+		FA7DC5D01E5DCB4D00E49737 /* FMDPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7DC5CF1E5DCB4D00E49737 /* FMDPreviewViewController.m */; };
 		FABAD23C1E59A4850026AAA2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FABAD23B1E59A4850026AAA2 /* AppDelegate.m */; };
 		FABAD23F1E59A4850026AAA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FABAD23E1E59A4850026AAA2 /* main.m */; };
 		FABAD2441E59A4850026AAA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABAD2431E59A4850026AAA2 /* Assets.xcassets */; };
@@ -133,6 +135,10 @@
 		FA7DC5B81E5D387C00E49737 /* CoreFramed-iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreFramed-iOS.h"; sourceTree = "<group>"; };
 		FA7DC5B91E5D387C00E49737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7DC5C81E5D40F200E49737 /* FramedResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FramedResources.bundle; sourceTree = "<group>"; };
+		FA7DC5CB1E5DB9CC00E49737 /* FMDDeviceModelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDDeviceModelCell.h; sourceTree = "<group>"; };
+		FA7DC5CC1E5DB9CC00E49737 /* FMDDeviceModelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDDeviceModelCell.m; sourceTree = "<group>"; };
+		FA7DC5CE1E5DCB4D00E49737 /* FMDPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDPreviewViewController.h; sourceTree = "<group>"; };
+		FA7DC5CF1E5DCB4D00E49737 /* FMDPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDPreviewViewController.m; sourceTree = "<group>"; };
 		FABAD2371E59A4850026AAA2 /* Framed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Framed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABAD23A1E59A4850026AAA2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FABAD23B1E59A4850026AAA2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -230,6 +236,7 @@
 		FA7DC5881E5D277A00E49737 /* Framed-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FA7DC5CA1E5DB9A000E49737 /* Views */,
 				FA7DC59E1E5D2A9E00E49737 /* View Controllers */,
 				FA7DC58C1E5D277A00E49737 /* AppDelegate.h */,
 				FA7DC58D1E5D277A00E49737 /* AppDelegate.m */,
@@ -258,6 +265,8 @@
 				FA7DC5A01E5D2BA600E49737 /* FMDMainViewController.m */,
 				FA7DC5A21E5D2E8C00E49737 /* FMDAboutTableViewController.h */,
 				FA7DC5A31E5D2E8C00E49737 /* FMDAboutTableViewController.m */,
+				FA7DC5CE1E5DCB4D00E49737 /* FMDPreviewViewController.h */,
+				FA7DC5CF1E5DCB4D00E49737 /* FMDPreviewViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -269,6 +278,15 @@
 				FA7DC5B91E5D387C00E49737 /* Info.plist */,
 			);
 			path = "CoreFramed-iOS";
+			sourceTree = "<group>";
+		};
+		FA7DC5CA1E5DB9A000E49737 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA7DC5CB1E5DB9CC00E49737 /* FMDDeviceModelCell.h */,
+				FA7DC5CC1E5DB9CC00E49737 /* FMDDeviceModelCell.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		FABAD22E1E59A4850026AAA2 = {
@@ -626,6 +644,8 @@
 			files = (
 				FA7DC58E1E5D277A00E49737 /* AppDelegate.m in Sources */,
 				FA7DC5A41E5D2E8C00E49737 /* FMDAboutTableViewController.m in Sources */,
+				FA7DC5CD1E5DB9CC00E49737 /* FMDDeviceModelCell.m in Sources */,
+				FA7DC5D01E5DCB4D00E49737 /* FMDPreviewViewController.m in Sources */,
 				FA7DC58B1E5D277A00E49737 /* main.m in Sources */,
 				FA7DC5A11E5D2BA600E49737 /* FMDMainViewController.m in Sources */,
 			);
@@ -1016,6 +1036,7 @@
 				FA7DC5C01E5D387C00E49737 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FABAD2321E59A4850026AAA2 /* Build configuration list for PBXProject "Framed" */ = {
 			isa = XCConfigurationList;
