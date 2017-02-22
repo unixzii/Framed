@@ -2,7 +2,7 @@
 Embed your screenshots into device frames.
 
 ## Screenshot
-![](https://github.com/unixzii/Framed/raw/master/Screenshot.png)
+![](https://github.com/unixzii/Framed/raw/master/Screenshot.png)a
 
 ## Supported Devices
 **Each with two finishes: Space Gray and Silver.**
@@ -17,8 +17,8 @@ Embed your screenshots into device frames.
 > All image resources' is from Apple Developer.
 
 ## Installing
-* Via App Store (Reviewing)
-
+* Via App Store (Current status: Rejected)
+* Download [Framed.dmg](https://github.com/unixzii/Framed/releases/download/v1.0/Framed.dmg).
 * Clone this repo and build yourself.
 ```bash
 git clone https://github.com/unixzii/Framed.git
